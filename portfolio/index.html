@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">My Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mithilesha Murugesan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="profile1.png" alt="Mithilesha profile picture">
+
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mithilesha Murugesan</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('resume.pdf')">
+                Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/mithilesha-murugesan-1ab169253/'"/>
+                <img src="instagram.png" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/_mithilesha_/?theme=dark'"/>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="about-pic.png" class="about-pic" height="490px" width="430px">
+
+
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="experience.png" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1 Year+ <br/> Frontend Developer</p>
+
+                    </div>
+                    <div class="details-container">
+                        <img src="education.png" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.E Electronics and Telecommunication</p>
+
+                    </div>
+                    
+                </div>
+                <div class="text-container">
+                    <p>I'm a third-year Electronics and Telecommunication engineering student with an insatiable passion for coding.I've actively contributed to programming clubs and hackathons, channeling my enthusiasm into practical applications. Whether it's optimizing circuits or writing algorithms, I thrive on the creative process that coding offers, both inside and outside the classroom.Working for the Training and Placement Cell has been an immensely enriching experience that has broadened my horizons beyond the classroom. Through this role, I've learned invaluable skills in communication, networking, and interpersonal relationships.Hello, I'm a dynamic individual with an insatiable appetite for life's adventures! My journey through this exciting world has been marked by an unwavering enthusiasm to embrace new challenges head-on. Whether it's unraveling the mysteries of technology, igniting my creative spark through coding, or fostering meaningful connections with people, I thrive on the thrill of exploration and innovation. My quest for knowledge is fueled by an uncontainable passion, and I approach each day with boundless energy, eager to seize every opportunity that comes my way. With an adventurous spirit and an unwavering commitment to excellence, I'm ready to continue writing the exhilarating chapters of my life's story.</p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container1">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container1">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>MySql</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container1">
+                    <h2 class="experience-sub-title">Interpersonal Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>Communication Skills</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>Creativity</h3>
+                         
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>Delegation Skills</h3>
+                            
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="experience-icon" class="icon"/>
+                            <div>
+                                <h3>Leadership Skills</h3>
+                                
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+
+    </section>
+
+
+    <section id="projects">
+        <p class="section__text__p1">My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container1 color-container">
+                <div class="article-container">
+                    <img src="project1.jpg" alt="Project 1"  class="project-img" />
+
+
+                </div>
+                <h2 class="experience-sub-title project title">DAQ system</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='https://github.com/'">
+                         Github
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+                         Live Demo
+                   </button>
+                </div>
+            </div>    
+            <div class="details-container1 color-container">
+                <div class="article-container">
+                    <img src="project2.png" alt="Project 2"  class="project-img" />
+
+
+                </div>
+                <h2 class="experience-sub-title project title">E-commerce Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='https://github.com/Mithlesha15/e-commerce-shopping-wesbite'">
+                         Github
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+                         Live Demo
+                   </button>
+                </div>
+            </div>    
+            <div class="details-container1 color-container">
+
+                <div class="article-container">
+                    <img src="project2.jpg" alt="Project 3"  class="project-img" />
+
+
+                </div>
+                <h2 class="experience-sub-title project title">RPM and DataLogger</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='https://github.com/'">
+                         Github
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+                         Live Demo
+                   </button>
+                </div>
+            </div>    
+          </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="email icon" class="icon contact-icon"/>
+                <p><a href="mailto:examplemail@gmail.com">mithilesha15@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linkedin.png" alt="email icon" class="icon contact-icon"/>
+                <p><a href="linkedin.com/in/mithilesha-murugesan-1ab169253/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Mithilesha Murugesan. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
